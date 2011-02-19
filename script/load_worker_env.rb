@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby1.8
 
 RAILS_HOME = File.expand_path(File.join(File.dirname(__FILE__),".."))
 
