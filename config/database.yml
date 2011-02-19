@@ -1,9 +1,12 @@
 # SQLite version 3.x
 #   gem install sqlite3-ruby (not necessary on OS X Leopard)
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-  pool: 5
+  adapter: mysql2
+  encoding: utf8
+  database: apps4nsw
+  username: apps4nsw
+  password: 1q2w3e4r
+  host: 10.0.0.128
   timeout: 5000
 
 # Warning: The database defined as "test" will be erased and

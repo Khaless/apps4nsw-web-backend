@@ -1,4 +1,9 @@
 WebBackend::Application.routes.draw do
+
+	resources :vehicles
+
+	match "/vehicles/by_location/:lat,:lng", :controller => :vehicles, :action => :by_location, :constraints => { :lat => /(|-)\d+\.\d+/, :lng =>  /(|-)\d+\.\d+/ }
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
