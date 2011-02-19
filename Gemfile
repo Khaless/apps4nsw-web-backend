@@ -9,6 +9,8 @@ gem 'mysql2', :require => 'mysql2'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'geokit-rails3'
 gem 'rubyzip'
+gem 'backgroundrb-rails3', :require => 'backgroundrb'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
