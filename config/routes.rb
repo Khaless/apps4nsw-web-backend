@@ -1,9 +1,9 @@
 WebBackend::Application.routes.draw do
 
-	resources :vehicles
-	resources :stops
-	match "/vehicles/by_location/:lat,:lng", :controller => :vehicles, :action => :by_location, :constraints => { :lat => /(|-)\d+\.\d+/, :lng =>  /(|-)\d+\.\d+/ }
-	match "/stops/by_location/:lat,:lng", :controller => :stops, :action => :by_location, :constraints => { :lat => /(|-)\d+\.\d+/, :lng =>  /(|-)\d+\.\d+/ }
+	match "/", :controller => :data, :action => :index
+	match "/:dataset", :controller => :data, :action => :all
+	match "/:dataset/:id", :controller => :data, :action => :show
+	match "/:dataset/by_location/:lat,:lng", :controller => :data, :action => :by_location, :constraints => { :lat => /(|-)\d+\.\d+/, :lng =>  /(|-)\d+\.\d+/ }
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
