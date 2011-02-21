@@ -22,6 +22,7 @@ class DataController < ApplicationController
 	end
 
 	def index
+		render :json => Datasets.map{ |k, v| { k => v.dataset_name } }
 	end
 
 	private
