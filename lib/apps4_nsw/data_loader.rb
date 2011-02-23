@@ -24,6 +24,7 @@ module Apps4Nsw
 			end
 
 			# Update Bus Stops
+=begin
 			ActiveRecord::Base.transaction do
 				doc = collections["stopdescription"]
 				doc.elements.each("StopDescriptionList/stop") do |e|
@@ -36,6 +37,7 @@ module Apps4Nsw
 					v.save
 				end
 			end
+=end
 		end
 	end
 end

@@ -10,8 +10,8 @@ module Apps4Nsw
 
   	include REXML
 		URLs = [
-			'http://data.nsw.gov.au/redirect.php?title=Real-time+bus+stops+and+vehicles+data.&file=XML',
-			'http://data.nsw.gov.au/redirect.php?title=Real-time+bus+stop+description+data.&file=XML'
+			'http://data.nsw.gov.au/redirect.php?title=Real-time+bus+stops+and+vehicles+data.&file=XML'
+			#'http://data.nsw.gov.au/redirect.php?title=Real-time+bus+stop+description+data.&file=XML'
 		]
 
   	# Grab the data file and yield the individual XML doc's inside it
