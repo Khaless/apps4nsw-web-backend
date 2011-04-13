@@ -22,7 +22,9 @@ class DataController < ApplicationController
 	end
 
 	def index
-		render :json => Datasets.map{ |k, v| { k => v.dataset_name } }
+		hash = {}
+		Datasets.each { |k, v| hash[k] = v.dataset_name }
+		render :json => hash
 	end
 
 	private
